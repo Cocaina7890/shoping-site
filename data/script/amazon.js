@@ -1,6 +1,7 @@
 import { cart, addToCart } from "../cart.js"
 import {products} from "../products.js"
 
+  
   let  productHTML = '';
 
 products.forEach( props => {
@@ -75,7 +76,7 @@ forEach((button) => {
 
     })
    
-function addCartQuantity(){
+  export   function addCartQuantity(){
     let cartQuantity = 0 ;
 
         cart.forEach((item) =>{
@@ -85,7 +86,7 @@ function addCartQuantity(){
       document.querySelector('.cart-quantity').innerHTML = cartQuantity
       
        
-        added()
+        
 
     }
 
